@@ -1,0 +1,48 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> SmartWatch Showcase </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="showcase.js"> </script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body onload="timer()"> 
+        <header>
+            <img id="logo" src="logo.svg" alt="logo">
+        </header>
+        <section id="main">
+            <div id="watch">
+                <img id="mywatch" src="https://i.imgur.com/Mplj1YR.png" alt="blue-watch">
+                <p id="time"></p>
+                <img id="heart" src="heartrate.png" alt="heart">
+                <span id="heartrate">74</span>
+            </div>
+            <div id="information">
+                <h1 id="title">FitBit 19 - The Smartest Watch </h1>
+                <p id="discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Amet labore eum expedita temporibus optio reprehenderit excepturi explicab </p>
+                <h3 id="heading">Select Color </h3>
+                <ul class="colors">
+                    <li class="blue" onclick="blue()"></li>
+                    <li class="black" onclick="black()"></li>
+                    <li class="red" onclick="red()"></li>
+                    <li class="pink" onclick="pink()"></li>
+                    <li class="purple" onclick="purple()"></li>
+                </ul>
+
+                <h3 class="feature"> Features </h3>
+
+                <ul class="options">
+                    <li><a onclick="timer()">Time</a></li>
+                    <li><a onclick="heartbeat()">Heart Rate</a></li>
+                </ul>
+
+                <button class="buy"> BUY NOW </button>
+            </div>
+        </section>
+        <script src="showcase.js"> </script>
+    </body>
+</html>
+
